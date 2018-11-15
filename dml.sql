@@ -32,10 +32,11 @@ SHOW TABLES;
 SELECT * FROM nombre_tabla;
 SELECT user,host FROM user;
 
-
+-- mostras tabla
 DESCRIBE nombre_tabla;
 
 -- crear tabla
 CREATE TABLE pet (name VARCHAR(20), owner VARCHAR(20),species VARCHAR(20), sex CHAR(1), birth DATE, death DATE);
+create table tiposdatos (numero INT, unacoma FLOAT, numeropequenio TINYINT, numerogrande BIGINT, masdeuno DECIMAL(3,2), hora TIME, fecha DATE, palabra VARCHAR(20)); 
 
 --
