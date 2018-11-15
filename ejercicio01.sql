@@ -1,0 +1,10 @@
+CREATE DATABASE productos CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE TABLE productos (id INT,descripcion VARCHAR(40),stock INT,fecha_alta DATE,proveedor VARCHAR(20),nacional ENUM('S','N'));
+INSERT INTO productos VALUES('0000001','Tomates','25','2018-11-11','FrutasVerduras','S');
+INSERT INTO productos VALUES('0000002','Pimientos','12','2018-11-10','CampoVerde','S');
+INSERT INTO productos VALUES('0000003','Borrajas','7','2018-11-14','Navarrico','S');
+INSERT INTO productos VALUES('0000004','Acelgas','3','2018-11-15','HuertoVilla','S');
+INSERT INTO productos VALUES('0000005','Pepinos','40','2018-11-15','VillaAgridulce','S');
+SHOW tables;
+SELECT * FROM productos;
+DROP DATABASE productos;
