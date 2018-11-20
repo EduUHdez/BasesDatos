@@ -49,6 +49,14 @@ SELECT user,host FROM user;
 -- mostrar tabla
 DESCRIBE nombre_tabla;
 
+-- restriccion a nivel de tabla
+CREATE TABLE empleados (cedula INT(8),Nombre VARCHAR (30),apellido VARCHAR(30),cargo VARCHAR(30),tiempo_servicio INT,PRIMARY KEY (cedula));
+
+-- restriccion a nivel de columna
+CREATE TABLE empleados2 (cedula INT(8) PRIMARY KEY,Nombre VARCHAR (30),apellido VARCHAR(30),cargo VARCHAR(30),tiempo_servicio INT);
+
+-- El campo que es clave primario no puede estar vacio ni admite valores nulos.
+
 -- eliminar base de datos
 DROP DATABASE nombre_bd;
 
