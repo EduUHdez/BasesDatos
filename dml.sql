@@ -56,6 +56,9 @@ SELECT user,host FROM user;
 -- restriccion a nivel de tabla
 CREATE TABLE empleados (cedula INT(8),Nombre VARCHAR (30),apellido VARCHAR(30),cargo VARCHAR(30),tiempo_servicio INT,PRIMARY KEY (cedula));
 
+--  a la hora de crear una tabla podremos hacer que el valor que se introduzca en ella sea siempre positivo
+...edad INT UNSIGNED);
+
 -- restriccion a nivel de columna
 CREATE TABLE empleados2 (cedula INT(8) PRIMARY KEY,Nombre VARCHAR (30),apellido VARCHAR(30),cargo VARCHAR(30),tiempo_servicio INT);
 
@@ -84,6 +87,10 @@ TRUNCATE TABLE nombretabla;
 
 -- eliminar base de datos
 DROP DATABASE nombre_bd;
+
+-- con DEFAULT tras un dato de una tabla al crearla le podemos dar un valor minimo
+CREATE TABLE farmacia (Stock INT DEFAULT 10);
+
 
 
 
